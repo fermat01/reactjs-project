@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/fermat01/reactjs-project?style=flat)
 ![ViewCount](https://views.whatilearened.today/views/github/fermat01/reactjs-project.svg?cache=remove)
 
- A simple expense management dynamic web application using react.js
+ A simple expense management dynamic web application using react.
 
 
 
