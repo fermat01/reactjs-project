@@ -1,7 +1,7 @@
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import React, { useState } from "react";
-
+import "./components/Expenses/ExpenseTitle.css";
 const dummyData = [
   {
     id: "e1",
@@ -34,6 +34,30 @@ const dummyData = [
     amount: 950,
     date: new Date(2022, 4, 10),
   },
+  {
+    id: "e7",
+    title: "New Radio ",
+    amount: 187.5,
+    date: new Date(2020, 9, 10),
+  },
+  {
+    id: "e8",
+    title: "TV Samsung ",
+    amount: 1950,
+    date: new Date(2023, 2, 10),
+  },
+  {
+    id: "e9",
+    title: "Apple watch ",
+    amount: 150,
+    date: new Date(2023, 7, 10),
+  },
+  {
+    id: "e10",
+    title: " Samsung Phone ",
+    amount: 970.89,
+    date: new Date(2020, 8, 10),
+  },
 ];
 
 const App = () => {
@@ -53,8 +77,16 @@ const App = () => {
     React.createElement(Expenses, { items: expenses })
   );
   */
+  
+
+  const ExpenseTitle = () => {
+    return <h1 className="expense-title">Expense management app</h1>;
+  };
+
   return (
+   
     <div>
+      <ExpenseTitle />
       <NewExpense onAddExpense={addExpenseHandler} />
 
       <Expenses items={expenses} />
